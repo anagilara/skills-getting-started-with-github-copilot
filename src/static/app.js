@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
             participantsHTML += `
               <div class='participant-item'>
                 <span class='participant-email'>${email}</span>
-                <span class='delete-participant' title='Remove participant' data-activity='${name}' data-email='${email}'>&#128465;</span>
+                <button type='button' class='delete-participant' title='Remove participant' aria-label='Remove ${email} from ${name}' data-activity='${name}' data-email='${email}'>&#128465;</button>
               </div>
             `;
           });
